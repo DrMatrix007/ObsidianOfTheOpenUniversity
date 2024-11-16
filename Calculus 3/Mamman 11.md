@@ -87,7 +87,7 @@ $$x \in \partial(A\backslash \partial A), x \notin \partial A $$
 $$\forall \text{Neighbourhood D of }x(\exists a,b \in D(a \in A \backslash \partial A \text{ and } b \notin A \backslash \partial A))$$
 ומתקיים:
 $$\exists \text{Neighbourhood D of }x(D \subseteq A \text{ or } D \subseteq \mathbb{R}^k\backslash A)$$
-נזכור שמתקיים בכל מקרה $x \notin \partial A$, ולכן מתקיים:
+נזכור שמתקיים לפי ההנחה $x \notin \partial A$, ולכן מתקיים:
 $$\forall \text{Neighbourhood D of }x(\exists a,b \in D(a \in A  \text{ and } b \notin A))$$
 ידוע כי קיימת סביבה $D$ כאשר $D \subseteq A$ או $D \subseteq \mathbb{R}^k \backslash A$
 אך זו סתירה כי לכל סביבה D קיים איבר ב$A$ וקיים איבר לא ב$A$
@@ -95,3 +95,5 @@ $$\forall \text{Neighbourhood D of }x(\exists a,b \in D(a \in A  \text{ and } b 
 לכן מתקיים
 $$\partial(A \backslash \partial A) \subseteq \partial A$$
 מש"ל
+# שאלה 3
+![[Pasted image 20241116232851.png]]
