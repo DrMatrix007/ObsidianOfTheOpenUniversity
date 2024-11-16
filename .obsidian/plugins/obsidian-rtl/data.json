@@ -1,0 +1,10 @@
+{
+  "fileDirections": {
+    "Calculus 3/Mamman 11.md": "auto"
+  },
+  "defaultDirection": "auto",
+  "rememberPerFile": true,
+  "setNoteTitleDirection": true,
+  "setYamlDirection": false,
+  "statusBar": true
+}

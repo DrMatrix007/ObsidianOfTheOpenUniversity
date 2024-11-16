@@ -15,7 +15,6 @@
               "state": {
                 "file": "Calculus 3/Mamman 11.md",
                 "mode": "source",
-                "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
@@ -155,6 +154,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "latex-ocr:LatexOCR": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -163,6 +163,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2eb731917ec61af2",
-  "lastOpenFiles": []
+  "active": "682f1ab1902aec32",
+  "lastOpenFiles": [
+    "$null",
+    "Calculus 3/images/Pasted image 20241113130523.png",
+    "Calculus 3/Mamman 11.md",
+    "Calculus 3/images"
+  ]
 }
