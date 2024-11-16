@@ -1,5 +1,7 @@
 [
   "obsidian-rtl",
   "obsidian-latex-suite",
-  "latex-ocr"
+  "latex-ocr",
+  "obsidian-completr",
+  "obsidian-git"
 ]

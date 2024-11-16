@@ -1,70 +1,80 @@
- ![[Pasted image 20241113130523.png]]
+# שאלה 1 ![[Pasted image 20241113130523.png]]
 
  נתון:
  קיימת פונ $\varphi$ כאשר:
  $$\varphi(B(0^{[k]};1)) = B(a;r)$$
  צ"ל:
  $$\varphi(S(0^{[k]};1)) = S(a;r)$$
-יהי $c$ כאשר:
-$$ c \in S(0^{[k]},1)$$
-לכן קיימות סדרות כאשר:
-יהי סדרה  $(a_{n}),(b_{n})$ כאשר:
-$$ \lim_{ n \to \infty } {(a_{n})} = c = \lim_{ n \to \infty } {(b_{n})} $$
-$$ \forall n>0 (a_{n} \in B(0^{[k]},1),b_{n} \notin B(0^{[k]},1)) $$
-נסתכל על הסדרות $(\varphi(a_{n}))^{\infty}_{n} \ \ (\varphi(b_{n}))^{\infty}_{n}$:
-
 נסתכל על $\varphi$ : (פונקציה אפינית)
 $$\varphi(x) = f(x) + b$$
-ניקח פונקציית $\varphi_{0}$:
-$$\varphi_{0}(x)=\frac{1}{r}((f(x)+b)-a)$$ 
-ונקבל:
-$$\varphi_{0}(B(0^{[k]},1)) = B(0^{[k]},1)$$
+ניקח פונ' 
+$$\varphi_{0}(x) = \frac{2}{r}*f(x) + b - a$$
+כאשר קיימת $A\in M^{\mathbb{R}}_{k\times k}$ כאשר:
+$$\varphi_{0}(x) = xA^t+b-a$$
+לפי הגדרת $\varphi, \varphi_{0}$ נקבל:
+$$\varphi_{0}(B(0^{[k]};1)) = B(0^{[k]};2)$$
+נסתכל על הבסיס הסטנדרטי $E=(e_{1},e_{2},\dots,e_{k})$ מעל $\mathbb{R}^{k}$, ונקבל:
+$$\forall 1\leq n\leq k(\exists x \in B(0^{[k]},1)(\varphi_{0}(x)=e_{n}))$$
+לכן $A$ מטריצה הפיכה ולכן הפונקציה
 
+$$f_{0}(x) = xA^t$$
+הפיכה ועל, (מהקורס אלגברה ליניארית 1) 
+ולכן, ניתן להבין בבירור כי הפונקציה $\varphi_{0}$ הפיכה ועל.
+לכן, הפונקציה $\varphi$ הפיכה ועל.
+## כיוון 1:
+יהי:
+$$ c \in S(a,r)$$
+לכן קיימות סדרות $(d_{n}),(e_{n})$  כאשר: (לפי הגדרת $\partial B(a;r)$)
+$$ \lim_{ n \to \infty } {(d_{n})} = c = \lim_{ n \to \infty } {(e_{n})} $$
+$$ \forall n>0 (d_{n} \in B(a,r),e_{n} \notin B(a,r)) $$
+נגדיר את הסדרות $(a_{n})_{n},(b_{n})_{n}$ באופן הבא:
+$$\forall n>0(a_{n}=\varphi^{-1}(d_{n}),b_{n}=\varphi^{-1}(e_{n}),)$$
+נסתכל על הסדרות הללו ונקבל: 
+$$\forall n>0(d_{n} \in B(a,r)) \implies \forall n>0(a_{n} \in B(0^{[k]},1))$$
+בנוסף, מפני ש $\varphi$ פונ חח"ע,אז לא יכול להיות $b_n$ ,שנמצא מחוץ ל $B(0;1)$, ומקיים $b_n \in B(a;r)$
+$$\forall n>0(e_{n} \notin B(a,r)) \implies \forall n>0(b_{n} \notin B(0^{[k]},1))$$
+אך ידוע כי מתקיים
+$$\lim_{ n \to \infty }(d_{n})=\lim_{ n \to \infty } (e_{n})=c $$
+כלומר, (מפני ש $\varphi$ רציפה אז גם $\varphi^{-1}$ רציפה)
+$$\lim_{ n \to \infty }(\varphi^{-1}(d_{n})) = \lim_{ n \to \infty }(\varphi^{-1}(e_{n})) = \varphi^{-1}(c)$$
+ונקבל
+$$\lim_{ n \to \infty } (a_{n}) = \lim_{ n \to \infty }(b_{n}) = \varphi^{-1}(c) $$
+לכן, מתקיים:
 
-
-כאשר $f$ פונקצייה ליניארית
-נניח כי קיימים $a,b,c\dots k\in \mathbb{R}$ כאשר:
-$|a|\neq r~~ or~~ |b|\neq r ~~or~~\dots~~ or~~|k|\neq r$
-
-$$f(<x_{1},x_{2},\dots,x_{k}>) = <ax_{1},bx_{2},\dots,kx_{k}>$$
-
-אז, 
- $$\varphi(B(0^{[k]};1)) \ne  B(a;r)$$
- קיבלנו סתירה,מפני שה"רדיוסים" לכל מימד יהיו שונים, ולכן הפלט של הפונקציה הוא לא כדור. 
- לכן לכל הערכים יש ערך מוחלט שווה.
- כלומר,
- $|a|=|b|=\dots=|k|=r$ 
- ניתן להבין, 
-%% 
-לפי שאלה 2.ד.27 בכרך א %%
- ידוע שהפונקציה $\varphi$ רציפה.
- לכן לכל  
- $$x_{0} \in S(0^{[k]};1)$$
- מתקיים
- $$\lim_{x \to x_{0}}{(\varphi(x))}=\varphi(x_{0})$$
- ידוע כי הקבוצה 
- $B(0^{k};1)$
-פתוחה,
-כלומר לכל
-  $x_{0} \in \partial (B(0^{k};1))$
-  $\epsilon > 0$
-  
-קיים 
-$x \in B(x_{0};\epsilon) \cap B(0^{[k]},1)$
-
-לכן, קיימת סדרה של $x_{n}$ המתכנסת ל $x_{0}$ .  לפי הרציפות של $\varphi$, נקבל
-$$\lim_{ n \to \infty }{(\varphi(x_{n}))} =\lim_{x \to x_{0}}{(\varphi(x))} = \varphi(x_{0})$$
-לכן לכל סדרה השואפת ל
-
-
-
-
-
- 
-
-
-
- 
- 
-
-    
+$$\forall \text{Neighbourhood D of }\varphi^{-1}(c)(\exists n,m(a_{n} \in D\ \text{and}\ b_{m} \in D)) $$
+ידוע כי
+$$\forall n>0(a_{n} \in B(0^{[k]},1))$$
+$$\forall n>0(b_{n} \notin B(0^{[k]},1))$$
+ונקבל כי 
+$$\varphi^{-1}(c) \in \partial B(0;1)$$
+כלומר, 
+$$\varphi^{-1}(c) \in S(0^{[k]};1)$$
+לכן
+$$c \in \varphi(S(0^{[k]};1))$$
+ונקבל 
+$$S(a;r) \subseteq \varphi(S(0^{[k]};1)) $$
+## כיוון 2:
+יהי:
+$$y \in \varphi(S(0^{[k]};1)),x \in \mathbb{R}^{k}$$
+כאשר:
+$$\varphi(x) = y$$
+ניקח סדרות $(d_{n}),(e_{n})$  כאשר: (לפי הגדרת $\partial B(0^{[k]};1)$)
+$$ \lim_{ n \to \infty } {(d_{n})} = x = \lim_{ n \to \infty } {(e_{n})} $$
+$$ \forall n>0 (d_{n} \in B(0^{[k]},1),e_{n} \notin B(0^{[k]},1)) $$
+מפני ש $\varphi$ פונ' חח"ע, נקבל:
+$$\forall n>0(\varphi(d_n) \in B(a;r),\varphi(e_n) \notin B(a;r))$$
+מפני ש $\varphi$ פונ' רציפה, נקבל:
+$$\lim_{n \rightarrow \infty}(\varphi(d_n)) = \varphi(\lim_{n \rightarrow \infty}(d_n)) = \varphi(x) = y =\varphi(\lim_{n \rightarrow \infty}(e_n))= \lim_{n \rightarrow \infty}(\varphi(e_n))$$
+לפי הסדרות $(\varphi(d_n)),(\varphi(e_n))$, ולפי התנהגותן סביב $y$, נקבל כי 
+$$\forall \text{Neighbourhood D of }y(\exists n,m(\varphi(d_n) \in D\ \text{and}\ \varphi(e_{m}) \in D)) $$
+כאשר
+$$ \forall n>0 (d_{n} \in B(0^{[k]},1),e_{n} \notin B(0^{[k]},1)) $$
+לכן, לפי הגדרת $y$ נקבל:
+$$y \in \partial B(a;r)$$
+כלומר,
+$$y \in S(a;r)$$
+ולכן,
+$$\varphi(S(0^{[k]};1)) \subseteq S(a;r)  $$
+ולפי הכלה דו כיוונית, נקבל:
+$$\varphi(S(0^{[k]};1)) = S(a;r)  $$
+מש"ל
