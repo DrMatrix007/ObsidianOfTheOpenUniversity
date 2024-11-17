@@ -130,9 +130,19 @@
           "icon": "lucide-list",
           "title": "Outline"
         }
+      },
+      {
+        "id": "f9125f9a0ce61f17",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {},
+          "icon": "git-pull-request",
+          "title": "Source Control"
+        }
       }
     ],
-    "currentTab": 0
+    "currentTab": 3
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -141,13 +151,14 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "f7e0cecec9a1da27",
   "lastOpenFiles": [
-    "Calculus 1/חוברת הקורס.pdf",
     "Calculus 3/ממן 11.md",
+    "Calculus 1/חוברת הקורס.pdf",
     "Calculus 3",
     "Calculus 2/20475-5029 (2).pdf",
     "Test.md"
