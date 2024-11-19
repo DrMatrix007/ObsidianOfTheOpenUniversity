@@ -1,7 +1,7 @@
 # שאלה 1 
 ![[Pasted image 20241113130523.png]]
 
- נתון:
+ :נתון:
  קיימת פונ $\varphi$ כאשר:
  $$\varphi(B(0^{[k]};1)) = B(a;r)$$
  צ"ל:
@@ -142,70 +142,4 @@ $$U_a = \{(x,y)|\ y>f(x) \text{ and } a-\delta<x<a+\delta \}$$
 לכן,
 $$(a-\delta,a+\delta) \times (f(a)+\varepsilon,\infty) \subseteq U_a$$
 לפי טענה 2.א.29 מכרך א' בספר הלימוד,
-נקבל כי הקבוצה $(a-\delta,a+\delta) \times (f(a)+\varepsilon,\infty)$ היא קבוצה פתוחה
-ידוע כי מתקיים $(a,f(a)+2\varepsilon) \in U_a$
-ולכן היא סביבה של נקודה זו.
-לכן, קבוצה זו היא קבוצה פתוחה
-
-קיבלנו שהצד הראשון גורר את השני והצד השני גורר את הראשון
-לכן הטענות הללו שקולות
-מש"ל
-# שאלה 4 ![[Pasted image 20241119092213.png]]
-נסתכל על הגבול
-$$\lim_{x \rightarrow 0^{[k]}}{\frac{e^{ -\frac{1}{|x|} }}{(\displaystyle\sum_{i=1}^{k}|x_i|)^{\alpha}}} = \lim_{x \rightarrow 0^{[k]}}{\frac{e^{ -\frac{1}{|x|} }}{\left(\sqrt{\displaystyle\sum_{i=1}^{k}|x_i|}\right)^{2\alpha}}}$$
-יהי $x \in U$ איבר בסביבה של $0^{[k]}$
-ידוע כי מתקיים:
-$$0\le {\frac{e^{ -\frac{1}{|x|} }}{\left(\sqrt{\displaystyle\sum_{i=1}^{k}|x_i|}\right)^{2\alpha}}} \le
-
-{\frac{e^{ -\frac{1}{|x|} }}{\left(\sqrt{\displaystyle\sum_{i=1}^{k}x_i^2}\right)^{2\alpha}}} = 
-
-{\frac{e^{ -\frac{1}{|x|} }}{\left(|x|\right)^{2\alpha}}}$$
-ידוע כי לפי חוק הסנדוויץ' 2.ו.1 בכרך א, מתקיים:
-$$0\le \lim_{x \rightarrow 0^{[k]}}{\frac{e^{ -\frac{1}{|x|} }}{\left(\sqrt{\displaystyle\sum_{i=1}^{k}|x_i|}\right)^{2\alpha}}} \le
-
-\lim_{x \rightarrow 0^{[k]}}{\frac{e^{ -\frac{1}{|x|} }}{\left(|x|\right)^{2\alpha}}}$$
-נסתכל על הגבול
-$$\lim_{x \rightarrow 0^{[k]}}{\frac{e^{ -\frac{1}{|x|} }}{\left(|x|\right)^{2\alpha}}}$$
-נקבל:
-$$\lim_{x \rightarrow 0^{[k]}}{\frac{e^{ -\frac{1}{|x|} }}{\left(|x|\right)^{2\alpha}}} = \lim_{x \rightarrow 0^+} \frac{e^{-\frac{1}{x}}}{x^{2 \alpha}}$$
-מהקורס חשבון אינפיניטסימלי 1, הגבול הבא שקול:
-$$\lim_{x \rightarrow \infty}\frac{e^{-x}}{\frac{1}{x^{2\alpha}}} $$
-נשתמש בחוק לופיטל ונקבל:
-$$\lim_{x\rightarrow \infty}{\frac{-e^{-x}}{-2a*x^{-2a-1}}}$$
-
-מאינפי 1, נשתמש בחוק לופיטל, כי המונה והמכנה שואפים ל $0$:
-$$\lim_{x \rightarrow 0^+}{\frac{e^{-\frac{1}{x}}}{x^{2 \alpha}}} = 
-\lim_{x \rightarrow 0^+}{\frac{\frac{1}{x^2}e^{ -\frac{1}{x} }}{2ax^{2a-1}}}=
-\lim_{x \rightarrow 0^+}{\frac{e^{ -\frac{1}{x} }}{2ax^{2a+1}}}=
-\lim_{x \rightarrow 0^+}{\frac{e^{ -\frac{1}{x} }}{(2a)(2a+1)x^{2a+2}}} = 
-\dots $$
-ונקבל, שלכל $n \in \mathbb{N}$:
-
-$$\lim_{x \rightarrow 0^+}{\frac{e^{-\frac{1}{x}}}{x^{2 \alpha}}} = \lim_{x \rightarrow 0^+}{\frac{e^{ -\frac{1}{x} }}{\ \left(\displaystyle\prod^{2a+n-1}_{i=2a}i\right) x^{2a+n}}}
-$$
-לכן קיים $n$ כאשר $2a+n > 1$
-# שאלה 5
-![[Pasted image 20241118182805.png]]
-## סעיף א
-ניקח $S=\{(x,y,z)\ |\ (x^2+y^2+z^2)^2 = x^2+y^2\}$
-אראה כי קיימת פונ' $h$ שהיא הומיאומורפיזם מ$S$ ל$\mathbb{R}^2$
-נסתכל על הקבוצה $S$
-ניקח $(x,y,z) \in S$
-לכן,
-$$(x^2+y^2+z^2)^2=x^2+y^2 / \sqrt{}$$
-$$x^2+y^2+z^2=\pm \sqrt{x^2+y^2} $$
-$$z^2=(\pm \sqrt{x^2+y^2})-x^2-y^2 $$
-אם ה"פלוס מינוס יהיה מינוס" אזי צד אחד במשוואה תמיד יהיה חיובי והצד השני תמיד יהיה שלילי, לכן הוא לא יכול להיות מינוס.
-ונקבל:
-$$z=\pm \sqrt{\sqrt{x^2+y^2}-x^2-y^2} $$
-
-ניקח 
-$f:  S \rightarrow \mathbb{R}^2 \backslash \{(0,0,0)\}$ כאשר:
-$$f(x,y,z) = \begin{cases} (x,y) &\text{if } z>=0 \\ \left( \frac{x}{x^2+y^2},\frac{y}{x^2+y^2} \right) &\text{else }  \end{cases}$$
-אראה שקיימת פונ' הופכית ל$f$ ולכן היא הומיאומורפיזם
-ניקח:
-$$f(x,y) = \begin{cases} \left( \frac{x}{x^2+y^2},\frac{y}{x^2+y^2},\sqrt{\frac{1}{\sqrt{x^2+y^2}}-\frac{1}{x^2+y^2}} \right) &\text{if } z>0 \\ (x,y,-\sqrt{\sqrt{x^2+y^2}-x^2-y^2}) &\text{else }  \end{cases}$$
-לכן, $f$ הומיאומורפיזם
-ולכן הקבוצה $S$ היא משטח (כמובן ש $\mathbb{R}^2 \backslash \{(0,0,0)\}$ קבוצה פתוחה)
-משל א
-## סעיף ב
+נקבל כי הקבוצה $(a-\delta,a+\delta) \times (f(a)+\varepsilon,\infty)$
