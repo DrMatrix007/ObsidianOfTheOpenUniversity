@@ -207,8 +207,9 @@ $f:  S \rightarrow \mathbb{R}^2 \backslash \{(0,0,0)\}$ כאשר:
 $$f(x,y,z) = \begin{cases} (x,y) &\text{if } z>=0 \\ \left( \frac{x}{x^2+y^2},\frac{y}{x^2+y^2} \right) &\text{else }  \end{cases}$$
 אראה שקיימת פונ' הופכית ל$f$ ולכן היא הומיאומורפיזם
 ניקח:
-$$f(x,y) = \begin{cases} \left( \frac{x}{x^2+y^2},\frac{y}{x^2+y^2},\sqrt{\frac{1}{\sqrt{x^2+y^2}}-\frac{1}{x^2+y^2}} \right) &\text{if } z>0 \\ (x,y,-\sqrt{\sqrt{x^2+y^2}-x^2-y^2}) &\text{else }  \end{cases}$$
-לכן, $f$ הומיאומורפיזם
+$$f^{-1}(x,y) = \begin{cases} \left( \frac{x}{x^2+y^2},\frac{y}{x^2+y^2},\sqrt{\frac{1}{\sqrt{x^2+y^2}}-\frac{1}{x^2+y^2}} \right) &\text{if } z>0 \\ (x,y,-\sqrt{\sqrt{x^2+y^2}-x^2-y^2}) &\text{else }  \end{cases}$$
+לכן, $f$ הומיאומורפיזם. אציג סרטוט הממחיש את ההומיאומורפיזם:
+![[Pasted image 20241123091342.png]]
 ולכן הקבוצה $S$ היא משטח (כמובן ש $\mathbb{R}^2 \backslash \{(0,0,0)\}$ קבוצה פתוחה)
 משל א
 ## סעיף ב
@@ -282,3 +283,4 @@ $$f_2(B(0^{[2]},r^2)) = S'_2$$
 ולכן הקבוצה $S'_1 \cup S'_2 = S\cap B(0^{[2]},r^2) \cup {0^{[3]}}$ קשורה מסילתית.
 הקבוצה $S \cap B(0^{[3]},r)$ לא קשורה מסילתית.
 מש"ל ב
+## סעיף ג
