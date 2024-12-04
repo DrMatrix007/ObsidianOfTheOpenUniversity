@@ -115,4 +115,146 @@ $$Dh_X(I)=XnX^{n-1}+IX^n=nX^n+X^n=(n+1)X^n$$
 $$Dh_X(I)=(n+1)X^n$$
 ולכן האינדוקציה מתקיימת, לכל $n \in \mathbb{N}$. לכן טענת השאלה הראשונה נכונה. 
 מש"ל
-![[Pasted image 20241203085445.png]]
+# שאלה 4 ![[Pasted image 20241203085445.png]]
+## סעיף א
+ניקח:
+$$G: t \mapsto F(t)=\int^{\infty}_{0}f(x,t)dx+\int^{0}_{-\infty}f(x,t)dx$$
+ניתן גם לכתוב זאת:
+$$G: t \mapsto \int^{\infty}_{0}(f(x,t)+f(-x,t))dx$$
+נתסכל על $\varphi$:
+$$\int^{\infty}_{-\infty}\varphi(x)dx=\int^{\infty}_{0}(\varphi(x)+\varphi(-x))dx=$$
+נבדוק:
+$$f(x,t)+f(-x,t) < \varphi(x) + \varphi(-x)$$
+ידוע כי $\varphi$ פונקציה עם ערכים חיוביים בלבד. לכן נקבל:
+$$f(x,t)+f(-x,t) \le |f(x,t)+f(-x,t)| < |f(x,t)| + |f(-x,t)| < \varphi(x) + \varphi(-x)$$ פסוק אמת לפי הנתון.
+לכן, מתקיים
+$$|f(x,t)+f(-x,t)| < \varphi(x) + \varphi(-x)$$
+לכן, לפי טענה 4.ה.3 נקבל כי $G$ פונ' מוגדרת ורציפה בקטע $[c,d]$.
+הפונ' $G$ שווה לפונ' $F$. לכן $F$ רציפה ומוגדרת בקטע $[c,d]$.
+מש"ל א
+## סעיף ב
+תהי 
+$$f: \mathbb{R} \times \mathbb{R}^k \rightarrow \mathbb{R}$$
+פונ' רציפה בכל המרחב ה $k+1$-ממדי. נגדיר:
+$$F:\mathbb{R}^k \rightarrow \mathbb{R}$$
+כאשר:
+$$F:y \mapsto \int^{\infty}_{-\infty}f(x,y)dx$$
+לפי הפונ' $\varphi$ ומהקורס חשבון אינפיניטסימלי 2, נקבל כי $F$ מוגדרת בכל $\mathbb{R}^k$
+יהי $\varepsilon > 0$,$d \in \mathbb{R}^k$. כאשר $|d|=1$ ($d$ מסמן כיוון כלשהוא מ$0$)
+ניקח
+$$F|_{y_0,d}: [0,1] \rightarrow \mathbb{R}$$
+כאשר
+$$F|_{y_0,y}: t \mapsto F(y_0+td)=F(y_0+td)$$
+מסעיף א, ניתן להסיק כי הפונ' הזו רציפה ב$0$ מימין. 
+לכן, ל$\varepsilon$ קיים $\delta_0>0$ כאשר לכל $|x| < \delta_0$ מתקיים $|F|_{y_0,y}(y_0+xd)-F|_{y_0,y}(y_0)| < \varepsilon$
+ניקח את ה$\delta_0$ המינימלי מכל $d$. נקרא לו $\delta_{min}$
+לכן, לכל $\varepsilon >0$ קיים $\delta = \delta_{min}$
+כאשר לכל $|x-y_0| < \delta$ מתקיים
+$$|F|_{y_0,y}(x)-F|_{y_0,y}(y)| < \varepsilon$$
+לכן הפונ' רציפה בנקודה זו.
+לכן הפונ' רציפה בכל $\mathbb{R}^{k}$.
+מש"ל ב.
+
+![[Pasted image 20241203155123.png]]
+ניקח את הפונ' מרחק בין הקבוצות
+$$f(x,y)=|a+xu-b-yv|$$
+נקבל:
+$$f(x,y)=|a-b+xu-yv|$$
+# שאלה 7 ![[Pasted image 20241203122356.png]]
+תהי:
+$$f:(x,y) \mapsto x^4+y^4 + (x - y)^3$$
+הפונ' רציפה וגזירה (מורכבת מפונ' גזירות ורציפות) ב $\mathbb{R}^2$.
+נמצא מתי מתקיים $\triangledown f(x,y)=0^{[2]}$:
+לפי משפט 3.ג.6:
+$$\triangledown f(x,y) =
+\begin{pmatrix}
+\frac{\partial f}{\partial x} & \frac{\partial f}{\partial y}
+\end{pmatrix}$$
+$$\triangledown f(x,y) =
+\begin{pmatrix}
+4x^3+3(x-y)^2 & 4y^3-3(x-y)^2
+\end{pmatrix}$$
+$$\triangledown f(x,y) =
+\begin{pmatrix}
+4x^3+3x^2-6xy+3y^2 & 4y^3-3x^2+6xy-3y^2
+\end{pmatrix}$$
+נציב:
+$$\triangledown f(x,y) =
+\begin{pmatrix}
+4x^3+3x^2-6xy+3y^2 & 4y^3-3x^2+6xy-3y^2
+\end{pmatrix}=0^{[2]}$$
+נקבל:
+$$\begin{cases}
+4x^3+3x^2-6xy+3y^2 = 0 \\
+4y^3-3x^2+6xy-3y^2 = 0\\
+\end{cases} $$
+נחבר משוואות:
+$$4x^3=-4y^3$$
+ונקבל:
+$$x=-y$$
+נציב ב2 המשוואות:
+$$\begin{cases}
+-4y^3+3y^2+6y^2+3y^2 = 0 \\
+4y^3-3y^2-6y^2-3y^2 = 0\\
+\end{cases} $$
+ונקבל:
+
+$$\begin{cases}
+-4y^3+12y^2= 0 \\
+4y^3-12y^2 = 0\\
+\end{cases} $$
+
+ $$y^2(4y-12)=0$$
+ לכן קיבלנו את הנקודות הקריטיות הללו:
+ $$(0,0), (-3,3)$$
+ נחשב את:
+ $$Hf_{(x,y)}=
+ \begin{pmatrix}
+	\frac{\partial f}{\partial x} \frac{\partial f}{\partial x} &&
+	\frac{\partial f}{\partial x} \frac{\partial f}{\partial y} \\
+	\frac{\partial f}{\partial y} \frac{\partial f}{\partial x} &&
+	\frac{\partial f}{\partial y} \frac{\partial f}{\partial y} \\
+\end{pmatrix}$$
+נקבל: $$Hf_{(x,y)}=
+ \begin{pmatrix}
+	12x^2+6(x-y) &&
+	-6(x-y) \\
+	-6(x-y) &&
+	12y^2+6(x-y) \\
+\end{pmatrix}$$
+נציב את הנקודות:
+$$Hf_{(0,0)}=
+\begin{pmatrix}
+0 && 0 \\
+0 && 0 \\
+\end{pmatrix},
+Hf_{(3,-3)}=
+\begin{pmatrix}
+72 && 36 \\
+36 && 72 \\
+\end{pmatrix},
+$$
+לכן הנקודה $(0,0)$ היא נק' אוכף ולכן היא לא מינימום ולא מקסימום
+הנקודה $(-3,3)$ היא נק' מינימום
+מש"ל.
+נבדוק האם הנק' $(-3,3)$ היא מינימום של הפונ':
+נמצא את הגובה של הנק':
+$$f(-3,3)=(-3)^4+3^4+(-3-3)^3 = -54$$
+נסתכל על הטווח $[-10,10] \times [-10,10]$. לפי משפט 6.א.4:
+קיימת נק' מינימום של כל הטווח הזה. $(-3,3,-54)$. נבדוק את הקצוות של הקטע
+$$-10 \le y \le 10:$$
+$$f(\pm 10,y) = 10^4+y^4+(\pm 10-y)^3 > 10000 - 20^3 = 2000>0$$
+$$-10 \le x \le 10:$$
+$$f(x,\pm 10) = x^4+10^4+(x\pm 10)^3 > 10000 - 20^3 = 2000>0$$
+לכן נקודת המינימום בקטע היא $(-3,3,-54)$.
+נבדוק את שאר הנקודות ב $\mathbb{R}^2$. ניקח:
+$$|x|>10,\ |y|>10$$
+$$f(x,y)=x^4+y^4+(y-x)^3$$
+$$f(x,y)=x^4+y^4+(y-x)(y^2-2xy+x^2)$$
+$$f(x,y)=x^4+y^4+y^3-2xy^2+yx^2-xy^2+2x^2y-x^3$$
+$$f(x,y)=x^4+y^4+y^3-3xy^2+3x^2y-x^3$$
+$$f(x,y)=x^2(x^2-x+3y) + y^2(y^2+y-3x)$$
+ניקח $a=min\{x,y\}$:
+$$a^2(a^2-a+3a)+a^2(a^2+a-3a)=a^4>0$$
+לכן כל נקודה אחרת היא לא נמוכה יותר מהנק' מינימום $(-3,3)$. ולכן היא הנק' מינימום ב$\mathbb{R}^2$.
+מש"ל
