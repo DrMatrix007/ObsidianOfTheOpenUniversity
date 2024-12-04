@@ -44,7 +44,7 @@ $$\frac{\cos^5(\theta_1)\cos^2(\theta_2)\sin(\theta_2)\sin^2(\theta_1)}{( \cos(\
 לכן זו סתירה להגדרה ולכן הנקודה לא גזירה ב0.
 נסתכל על הנקודות$(x,y,z) \ne (0,0,0)$.
 לפי משפט 3.ג.6, נחשב:
-$$\triangledown f(0^{[3]}) = \begin{pmatrix}
+$$\triangledown f(x,y,z) = \begin{pmatrix}
 \frac{\partial f}{\partial x}(x,y,z)\\
 \frac{\partial f}{\partial y}(x,y,z)\\
 \frac{\partial f}{\partial z}(x,y,z)\\
@@ -71,7 +71,7 @@ $$g(a+h)-g(a)=Dg_a(h)+o(|h|)$$
 ונקבל:
 $$f(a+h)=f(a)+Df_a(h)+o(|h|)$$
 $$g(a+h)=g(a)+Dg_a(h)+o(|h|)$$
-נבדוק אם הגבול קיים וקיימת פונקציה ליניארית כאשר:
+נבדוק אם הגבול קיים ושווה ל-$0$ וקיימת פונקציה ליניארית כאשר:
 $$\frac{p(a+h)-p(a)-Dp_a(h)}{|h|}\xrightarrow[h \rightarrow 0^{[k]}]{}0$$
 ונקבל:
 $$\frac{f(a+h)g(a+h)-f(a)g(a)-Dp_a(h)}{|h|}\xrightarrow[h \rightarrow 0^{[k]}]{}0$$
@@ -85,6 +85,7 @@ $$\frac{f(a)Dg_a(h)+Df_a(h)g(a)-Dp_a(h)}{|h|}+0
 \xrightarrow[h \rightarrow 0^{[k]}]{}0$$
 נראה שניתן להציב:
 $$Dp_a(h)=f(a)Dg_a(h)+Df_a(h)g(a)$$
+לכן הגבול מתקיים ושווה ל$0$
 הרכבה וחיבור של פונקציות ליניאריות יוצרים פונ' ליניארית, לכן $Dp_a(h)$ היא פונ' לינארית.
 לכן הנקודה גזירה וזו הנגזרת שלה. מש"ל
 # שאלה 3 ![[Pasted image 20241202183929.png]]
@@ -101,7 +102,7 @@ $$Df_X(H)=IH$$
 ונקבל:
 $$Df_x(I)=I=1X^0$$
 לפי הנחת האינדוקציה:
-$$g(x) = X^n, Df_X(I)=nX^{n-1}$$
+$$g(x) = X^n, Dg_X(I)=nX^{n-1}$$
 ניקח:
 $$h(X)=X^{n+1}=h_1(X)h_2(X)$$
 כאשר:
@@ -122,14 +123,14 @@ $$G: t \mapsto F(t)=\int^{\infty}_{0}f(x,t)dx+\int^{0}_{-\infty}f(x,t)dx$$
 ניתן גם לכתוב זאת:
 $$G: t \mapsto \int^{\infty}_{0}(f(x,t)+f(-x,t))dx$$
 נתסכל על $\varphi$:
-$$\int^{\infty}_{-\infty}\varphi(x)dx=\int^{\infty}_{0}(\varphi(x)+\varphi(-x))dx=$$
+$$\int^{\infty}_{-\infty}\varphi(x)dx=\int^{\infty}_{0}(\varphi(x)+\varphi(-x))dx$$
 נבדוק:
-$$f(x,t)+f(-x,t) < \varphi(x) + \varphi(-x)$$
+$$|f(x,t)+f(-x,t)| < \varphi(x) + \varphi(-x)$$
 ידוע כי $\varphi$ פונקציה עם ערכים חיוביים בלבד. לכן נקבל:
-$$f(x,t)+f(-x,t) \le |f(x,t)+f(-x,t)| < |f(x,t)| + |f(-x,t)| < \varphi(x) + \varphi(-x)$$ פסוק אמת לפי הנתון.
+$$|f(x,t)+f(-x,t)| < |f(x,t)| + |f(-x,t)| < \varphi(x) + \varphi(-x)$$ פסוק אמת לפי הנתון.
 לכן, מתקיים
 $$|f(x,t)+f(-x,t)| < \varphi(x) + \varphi(-x)$$
-לכן, לפי טענה 4.ה.3 נקבל כי $G$ פונ' מוגדרת ורציפה בקטע $[c,d]$.
+לכן, לפי טענה 4.ד.3 נקבל כי $G$ פונ' מוגדרת ורציפה בקטע $[c,d]$.
 הפונ' $G$ שווה לפונ' $F$. לכן $F$ רציפה ומוגדרת בקטע $[c,d]$.
 מש"ל א
 ## סעיף ב
@@ -158,8 +159,24 @@ $$|F|_{y_0,y}(x)-F|_{y_0,y}(y)| < \varepsilon$$
 ![[Pasted image 20241203155123.png]]
 ניקח את הפונ' מרחק בין הקבוצות
 $$f(x,y)=|a+xu-b-yv|$$
+נגידר:
+$$g(t): \mathbb{R} \rightarrow \mathbb{R}^3,\ h(t): \mathbb{R} \rightarrow \mathbb{R}^3$$
+$$g(t) = a+tu,\ h(t)=b+tv$$
 נקבל:
-$$f(x,y)=|a-b+xu-yv|$$
+$$f(x,y)=|a+xu-b-yv|=|g(x)-h(y)| = \sqrt{(g(x)-h(y))*(g(x)-h(y))}$$
+$$f(x,y)=\sqrt{\sum^{3}_{n=1}([g(x)]_n-[f(y)]_n)^2}$$
+$$f(x,y)=\sqrt{\sum^{3}_{n=1}([g(x)]_n^2-2[g(x)]_n[f(y)]_n+[f(y)]_n^2)}$$
+נמצא את הנקודות מינימום:
+$$\triangledown f(x,y) =
+\begin{pmatrix}
+\frac{\partial f}{\partial x} & \frac{\partial f}{\partial y}
+\end{pmatrix}$$
+$$\triangledown f(x,y) =
+\begin{pmatrix}
+\frac{\displaystyle\sum^{3}_{n=1}(2[g'(x)]_n[g(x)]_n-2[g'(x)]_n[h(y)]_n)}{\displaystyle\sum^{3}_{n=1}([g(x)]_n^2-2[g(x)]_n[h(y)]_n+[h(y)]_n^2)} & \frac{\displaystyle\sum^{3}_{n=1}(-2[g(x)]_n[h'(y)]_n+2[h'(x)]_n[h(x)]_n}{\displaystyle\sum^{3}_{n=1}([g(x)]_n^2-2[g(x)]_n[f(y)]_n+[f(y)]_n^2)}
+\end{pmatrix}$$
+
+
 # שאלה 7 ![[Pasted image 20241203122356.png]]
 תהי:
 $$f:(x,y) \mapsto x^4+y^4 + (x - y)^3$$
@@ -228,14 +245,36 @@ $$Hf_{(0,0)}=
 0 && 0 \\
 0 && 0 \\
 \end{pmatrix},
-Hf_{(3,-3)}=
+Hf_{(-3,3)}=
 \begin{pmatrix}
 72 && 36 \\
 36 && 72 \\
 \end{pmatrix},
 $$
 לכן הנקודה $(0,0)$ היא נק' אוכף ולכן היא לא מינימום ולא מקסימום
-הנקודה $(-3,3)$ היא נק' מינימום
+נסתכל על $Hf_{(-3,3)}$:
+$$\begin{pmatrix}
+x & y
+\end{pmatrix}
+\begin{pmatrix}
+72 & 36 \\
+36 & 72
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = 
+\begin{pmatrix}
+x & y
+\end{pmatrix}
+\begin{pmatrix}
+72x + 36y \\
+36x + 72y
+\end{pmatrix} = 
+$$
+$$=72x^2+72xy+72y^2 = 36(x^2+2xy+y^2) + 36x^2+36y^2 = 36(x+y)^2+36x^2+36y^2 > 0$$
+וקיבלנו שזאת מטריצה חיובית.
+לכן, הנקודה $(-3,3)$ היא נק' מינימום
 מש"ל.
 נבדוק האם הנק' $(-3,3)$ היא מינימום של הפונ':
 נמצא את הגובה של הנק':
