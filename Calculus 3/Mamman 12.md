@@ -134,7 +134,52 @@ $$|f(x,t)+f(-x,t)| < \varphi(x) + \varphi(-x)$$
 הפונ' $G$ שווה לפונ' $F$. לכן $F$ רציפה ומוגדרת בקטע $[c,d]$.
 מש"ל א
 ## סעיף ב
-תהי 
+
+נסתכל על האינטגרל:
+$$F(y) = \int^{\infty}_{-\infty}f(x,y)dx =$$
+$$F(y) = \int^{\infty}_{-\infty}f(x,y)dx = 
+\int^{-L}_{-\infty}f(x,y)dx +
+\int^{-L}_{L}f(x,y)dx+
+\int^{\infty}_{L}f(x,y)dx$$
+
+יהי $\varepsilon > 0, y_0 \in \mathbb{R}^k$. נמצא $\delta > 0$ כאשר מתקיים לכל $|y-y_0| < \delta$:
+$$|F(y)-F(y_0)| = 
+\tiny|\int^{-L}_{-\infty}f(x,y)dx
++\int^{\infty}_{L}f(x,y)dx 
++\int^{-L}_{L}f(x,y)dx
+-\int^{-L}_{L}f(x,y)dx
+-\int^{-L}_{-\infty}f(x,y)dx
+-\int^{\infty}_{L}f(x,y)dx| \le$$
+$$\small\le
+ |\int^{-L}_{-\infty}f(x,y)dx| 
++|\int^{-L}_{-\infty}f(x,y_0)dx|
++|\int^{-L}_{-L}f(x,y_0)dx-\int^{-L}_{L}f(x,y)dx|
++|\int^{\infty}_{L}f(x,y)dx|
++|\int^{\infty}_{L}f(x,y_0)dx|$$
+ידוע כי מתקיים:
+$$\lim_{L \rightarrow \infty}\int^{\infty}_{L}\varphi(x)dx = 0$$
+לכן קיים $L$ כאשר:
+$$|\int^{\infty}_{L}\varphi(x)dx| < \frac{1}{10}\varepsilon$$
+ללא הגבלה על $y$ כלל.
+ניקח $L$ כזה, ונקבל:
+$$\small
+ |\int^{-L}_{-\infty}f(x,y)dx| 
++|\int^{-L}_{-\infty}f(x,y_0)dx|
++|\int^{-L}_{-L}f(x,y_0)dx-\int^{-L}_{L}f(x,y)dx|
++|\int^{\infty}_{L}f(x,y)dx|
++|\int^{\infty}_{L}f(x,y_0)dx|\le$$
+$$\le \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + |\int^{L}_{-L}(f(x,y_0)-f(x,y))dx|$$
+מפני ש $f$ רציפה בכל $\mathbb{R}^{k+1}$ אזי היא רציפה במידה שווה ב$[-10L,10L] \times \bigtimes_{i=1}^k[y_i-10,y_i+10]$.
+לכן, קיים $\delta > 0$ כאשר:
+$$|\int^{L}_{-L}(f(x,y_0)-f(x,y))dx| \le
+|\int^{L}_{-L}\frac{1}{4L}\varepsilon dx| \le
+\frac{1}{2}\varepsilon$$
+ונקבל:
+$$\le \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + |\int^{L}_{-L}(f(x,y_0)-f(x,y))dx| < \frac{9}{10}\varepsilon < \varepsilon$$
+לכל $|y-y_0| < \delta$.
+לכן הפונ' רציפה.
+מש"ל ב.
+%% תהי 
 $$f: \mathbb{R} \times \mathbb{R}^k \rightarrow \mathbb{R}$$
 פונ' רציפה בכל המרחב ה $k+1$-ממדי. נגדיר:
 $$F:\mathbb{R}^k \rightarrow \mathbb{R}$$
@@ -155,7 +200,7 @@ $$|F|_{y_0,y}(x)-F|_{y_0,y}(y)| < \varepsilon$$
 לכן הפונ' רציפה בנקודה זו.
 לכן הפונ' רציפה בכל $\mathbb{R}^{k}$.
 מש"ל ב.
-
+ %%
 ![[Pasted image 20241203155123.png]]
 ניקח את הפונ' מרחק בין הקבוצות
 $$f(x,y)=|a+xu-b-yv|$$
