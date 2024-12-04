@@ -179,28 +179,6 @@ $$\le \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilo
 לכל $|y-y_0| < \delta$.
 לכן הפונ' רציפה.
 מש"ל ב.
-%% תהי 
-$$f: \mathbb{R} \times \mathbb{R}^k \rightarrow \mathbb{R}$$
-פונ' רציפה בכל המרחב ה $k+1$-ממדי. נגדיר:
-$$F:\mathbb{R}^k \rightarrow \mathbb{R}$$
-כאשר:
-$$F:y \mapsto \int^{\infty}_{-\infty}f(x,y)dx$$
-לפי הפונ' $\varphi$ ומהקורס חשבון אינפיניטסימלי 2, נקבל כי $F$ מוגדרת בכל $\mathbb{R}^k$
-יהי $\varepsilon > 0$,$d \in \mathbb{R}^k$. כאשר $|d|=1$ ($d$ מסמן כיוון כלשהוא מ$0$)
-ניקח
-$$F|_{y_0,d}: [0,1] \rightarrow \mathbb{R}$$
-כאשר
-$$F|_{y_0,y}: t \mapsto F(y_0+td)=F(y_0+td)$$
-מסעיף א, ניתן להסיק כי הפונ' הזו רציפה ב$0$ מימין. 
-לכן, ל$\varepsilon$ קיים $\delta_0>0$ כאשר לכל $|x| < \delta_0$ מתקיים $|F|_{y_0,y}(y_0+xd)-F|_{y_0,y}(y_0)| < \varepsilon$
-ניקח את ה$\delta_0$ המינימלי מכל $d$. נקרא לו $\delta_{min}$
-לכן, לכל $\varepsilon >0$ קיים $\delta = \delta_{min}$
-כאשר לכל $|x-y_0| < \delta$ מתקיים
-$$|F|_{y_0,y}(x)-F|_{y_0,y}(y)| < \varepsilon$$
-לכן הפונ' רציפה בנקודה זו.
-לכן הפונ' רציפה בכל $\mathbb{R}^{k}$.
-מש"ל ב.
- %%
 ![[Pasted image 20241203155123.png]]
 ניקח את הפונ' מרחק בין הקבוצות
 $$f(x,y)=|a+xu-b-yv|$$
