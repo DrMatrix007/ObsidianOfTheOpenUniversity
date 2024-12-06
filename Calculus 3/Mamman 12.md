@@ -27,7 +27,9 @@ $$\lim_{(x,y,z) \rightarrow (0,0,0)}(\frac{f(x,y,z)+f(0,0,0)- \triangledown f(0,
 x\\
 y\\
 z\\
-\end{pmatrix}}{\sqrt{x^2+y^2+z^2}})=$$$$\lim_{(x,y,z) \rightarrow (0,0,0)}(\frac{\frac{x^2yz^2}{x^8+y^6+z^4}}{\sqrt{x^2+y^2+z^2}})$$
+\end{pmatrix}}{\sqrt{x^2+y^2+z^2}})=$$
+$$\lim_{(x,y,z) \rightarrow (0,0,0)}(\frac{\frac{x^2yz^2}{x^8+y^6+z^4}}{\sqrt{x^2+y^2+z^2}})$$
+
 נמיר להצגה פולארית:
 $$(x,y,z) \mapsto (r,\theta_1,\theta_2)$$
 $$x \mapsto r \cos(\theta_1)\cos(\theta_2)$$
@@ -147,9 +149,9 @@ $$|F(y)-F(y_0)| =
 \tiny|\int^{-L}_{-\infty}f(x,y)dx
 +\int^{\infty}_{L}f(x,y)dx 
 +\int^{-L}_{L}f(x,y)dx
--\int^{-L}_{L}f(x,y)dx
--\int^{-L}_{-\infty}f(x,y)dx
--\int^{\infty}_{L}f(x,y)dx| \le$$
+-\int^{-L}_{L}f(x,y_0)dx
+-\int^{-L}_{-\infty}f(x,y_0)dx
+-\int^{\infty}_{L}f(x,y_0)dx| \le$$
 $$\small\le
  |\int^{-L}_{-\infty}f(x,y)dx| 
 +|\int^{-L}_{-\infty}f(x,y_0)dx|
@@ -170,6 +172,7 @@ $$\small
 +|\int^{\infty}_{L}f(x,y_0)dx|\le$$
 $$\le \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + |\int^{L}_{-L}(f(x,y_0)-f(x,y))dx|$$
 מפני ש $f$ רציפה בכל $\mathbb{R}^{k+1}$ אזי היא רציפה במידה שווה ב$[-10L,10L] \times \bigtimes_{i=1}^k[y_i-10,y_i+10]$.
+לכן, לכל $\varepsilon > 0$ קיים $\delta > 0$ כאשר לכל $|y-y_0| < \delta$ מתקיים $|f(y)-f(y_0)| < \varepsilon$.
 לכן, קיים $\delta > 0$ כאשר:
 $$|\int^{L}_{-L}(f(x,y_0)-f(x,y))dx| \le
 |\int^{L}_{-L}\frac{1}{4L}\varepsilon dx| \le
@@ -180,26 +183,26 @@ $$\le \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilon + \frac{1}{10}\varepsilo
 לכן הפונ' רציפה.
 מש"ל ב.
 ![[Pasted image 20241203155123.png]]
-ניקח את הפונ' מרחק בין הקבוצות
-$$f(x,y)=|a+xu-b-yv|$$
-נגידר:
-$$g(t): \mathbb{R} \rightarrow \mathbb{R}^3,\ h(t): \mathbb{R} \rightarrow \mathbb{R}^3$$
-$$g(t) = a+tu,\ h(t)=b+tv$$
-נקבל:
-$$f(x,y)=|a+xu-b-yv|=|g(x)-h(y)| = \sqrt{(g(x)-h(y))*(g(x)-h(y))}$$
-$$f(x,y)=\sqrt{\sum^{3}_{n=1}([g(x)]_n-[f(y)]_n)^2}$$
-$$f(x,y)=\sqrt{\sum^{3}_{n=1}([g(x)]_n^2-2[g(x)]_n[f(y)]_n+[f(y)]_n^2)}$$
-נמצא את הנקודות מינימום:
-$$\triangledown f(x,y) =
-\begin{pmatrix}
-\frac{\partial f}{\partial x} & \frac{\partial f}{\partial y}
-\end{pmatrix}$$
-$$\triangledown f(x,y) =
-\begin{pmatrix}
-\frac{\displaystyle\sum^{3}_{n=1}(2[g'(x)]_n[g(x)]_n-2[g'(x)]_n[h(y)]_n)}{\displaystyle\sum^{3}_{n=1}([g(x)]_n^2-2[g(x)]_n[h(y)]_n+[h(y)]_n^2)} & \frac{\displaystyle\sum^{3}_{n=1}(-2[g(x)]_n[h'(y)]_n+2[h'(x)]_n[h(x)]_n}{\displaystyle\sum^{3}_{n=1}([g(x)]_n^2-2[g(x)]_n[f(y)]_n+[f(y)]_n^2)}
-\end{pmatrix}$$
-
-
+ניצור שני משטחים מקבילים:
+$$A'=\{a+xu+yv|x,y\in \mathbb{R}\}$$
+$$B'=\{b+xu+yv|x,y\in \mathbb{R}\}$$
+נחשב את הגובה בניהם, שהוא בעצם יהיה המרחק בין הקבוצות.
+נחשב את הנפח של המקבילון, נחשב את השטח של הבסיס של המקבילית, ואז אפשר לחשב את הגובה. נגדיר $P$ את המקבילון, $C$ את המשטח ו$d$ את הגובה.
+$$V(P) = d S(C)$$
+ידוע כי הנפח של המקבילון הוא הדטרמנינטה של המטריצת וקטורים שלו. 
+בנוסף, השטח של $C$ הוא הערך המוחלט של המכפלה הווקטורית של הוקטורי בסיס.
+ונקבל:
+$$V(P)=\begin{vmatrix}
+\\
+& u && v && a-b &
+\\&
+\end{vmatrix} = (u \times v) * (a-b)$$
+$$dS(C) = d|u \times v|$$
+ולכן:
+$$d|u \times v| = (u \times v) * (a-b)$$
+ונקבל:
+$$d=\frac{(u \times v) * (a-b)}{|u \times v|}$$
+מש"ל ![[Pasted image 20241205094202.png]]
 # שאלה 7 ![[Pasted image 20241203122356.png]]
 תהי:
 $$f:(x,y) \mapsto x^4+y^4 + (x - y)^3$$
