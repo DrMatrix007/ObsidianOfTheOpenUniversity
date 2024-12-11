@@ -207,16 +207,22 @@ $$\begin{vmatrix}
 1 & 0 & 0 \\
 zy & xz + \alpha zy & xy
 \end{vmatrix} = (6xy^6+ \alpha 6x^6y )-(6xz^6+6\alpha yz^6)=$$
-$$=6(xy^6+\alpha x^6y-(x-\alpha y)z^6)$$
+$$=6(xy^6+\alpha x^6y-(x+\alpha y)z^6)$$
 נציב:
 $$x=\alpha y$$
 נקבל:
-$$=6(\alpha y^7+ \alpha^7y^7-(0)z^6)=6y^7(\alpha+\alpha^7)$$
+$$=6(\alpha y^7+ \alpha^7y^7-(2\alpha y)z^6)=6(y^7(\alpha+\alpha^7)-2\alpha y z^6)$$
 הדטרמיננטה הנ"ל שווה ל$0$ אם"ם:
-$$y=0$$
-בנוסף, נקבל:
-$$x=0, z = \sqrt[6]{3}$$
-ולכן $(0,0,\sqrt[6]{3})$ נק קיצון.
+$$z^6=y^6 \frac{\alpha^7+\alpha}{2\alpha}$$
+
+ונקבל:
+$$x= \alpha y, z = y\sqrt[6]{ \frac{\alpha^7+\alpha}{2\alpha}}$$
+נבדוק מתי:
+$$(\alpha y)^6+y^6+y^6 \frac{\alpha^7+\alpha}{2\alpha}=3$$
+ולכן:
+$$y = \sqrt[6]{ \frac{3}{\alpha^6+1+\frac{\alpha^7+\alpha}{2\alpha}} } = 
+\sqrt[6]{ \frac{2}{\alpha^6+1}}$$
+ולכן $\left( \alpha\sqrt[6]{\frac{2}{\alpha^6+1}},\sqrt[6]{ \frac{2}{\alpha^6+1}},1 \right)$ נק קיצון לכל .
 # מקרה 2: $x^6+y^6+z^6=3, x < \alpha y$
 ניקח: 
 $$\varphi: (x,y,z) \mapsto x^6+y^6+z^6$$
@@ -270,9 +276,19 @@ $$x=z=y=0$$
 $$x=z=0, 0 \le y <\sqrt[6]{3}$$
 ולכן אלה גם נקודות קיצון.
 לסיכום, נקבל:
-$$(0,0,\sqrt[6]{3}),(1,1,1),(0,0,a),(0,0,0),(0,a,0)$$
+$$\left( \alpha\sqrt[6]{\frac{2}{\alpha^6+1}},\sqrt[6]{ \frac{2}{\alpha^6+1}},1 \right),
+(1,1,1),
+(0,0,a),
+(0,0,0),
+(0,a,0)$$
 לכל $0 \le a < \sqrt[6]{3}$.
 נמצא את המינימום והמקסימום. הוא בין הנקודות הנ"ל:
-מקסימום:
+## מקסימום:
 כל נקודה עם 0 ערכה הוא 0. לכן הנק מקסימום תיהיה אםם $\alpha>1$:
 $$f(1,1,1) = 1$$
+בנוסף, נקבל כי הנק $\left( \alpha\sqrt[6]{\frac{2}{\alpha^6+1}},\sqrt[6]{ \frac{2}{\alpha^6+1}},1 \right)$ היא גם נק מקסימום ומקסימום מוחלט, אם"ם הנק הנ"ל לא מוגדרת, ונקבל:
+$$f\left( \alpha\sqrt[6]{\frac{2}{\alpha^6+1}},\sqrt[6]{ \frac{2}{\alpha^6+1}},1 \right)=\alpha \sqrt[3]{\frac{2}{a^6+1}}$$
+
+## מינימום:
+כל נקודה שמכילה את $0$ באחד האיברים שלה,  היא נק' מינימום, היות וזה הערך המינימלי שהפונ' מוציאה, כי $x,y,z$ אי שליליים.
+מש"ל.
