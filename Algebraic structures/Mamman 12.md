@@ -42,8 +42,38 @@ $$0.1 \cdot g \in G$$
 
 # שאלה 2
 ![[Pasted image 20251207203354.png]]
-נתון: $H$ ו-$G$ חבורות. $
+# סעיף א
+נתון: $H$ ו-$G$ חבורות. $\varphi$ ו- $\psi$ הם הומומורפיזמים.
+נגדיר $E = \{ x \in G | x \psi = x \varphi \}$
+יהי $a, b \in E$
+לפי תנאי ההומומורפיזם, נקבל כי לכל הומומורפיזם $\varphi$ מתקיים:
+	לכל $a \in G$, עם האיבר הניטרלי של $G$, $e$:
+$$ \varphi(e)\varphi(a) = \varphi(ea) = \varphi(a) = \varphi(ae) = \varphi(a)\varphi(e)$$
+	לכן $\varphi(e)$ הוא האיבר ניטרלי ב$H$.
 
+לכן, נקבל כי $e \in E$ .
+
+יהי $a \in E$ .
+$$\psi(a)\psi(a^{-1}) = \psi(aa^{-1}) = \psi(e) = \varphi(e) = \varphi(aa^{-1}) = \varphi(a)\varphi(a^{-1})$$
+ונקבל:
+$$\psi(a) \psi(a^{-1}) = \varphi(a) \varphi(a^{-1}) \space \space \backslash \space \space \varphi(a)\space^{-1} \space \cdot $$
+מפני ש $a \in E$ , נקבל:
+$$\psi(a^{-1}) = \varphi(a^{-1})$$
+לכן, מתקיים: 
+$$a \in E \iff a^{-1} \in E$$
+יהי $a, b \in E$
+נקבל:
+$$\varphi(a)\varphi(b) = \psi(a) \psi(b)$$
+לפי תנאי ההומומורפיזם, נקבל:
+$$\varphi(ab) = \psi(ab)$$
+ולכן גם $ab \in E$ .
+ונקבל, עבור $a ,b \in E$ נקבל גם כי $ab^{-1} \in E$ .
+לפי למה 8.6 נקבל כי $E$ היא תת חבורה ב-$G$
+# סעיף ב
+נגדיר קבוצה $S$ כאשר:
+$$S \subseteq E \subseteq G$$
+לפי משפט 8.15 נקבל כי $[S]$ היא תת-חבורה ב$E$.
+לכן, כל איבר ב-$[S]$ קיים גם ב-$E$. לכן הטענה נכונה.
 
 ![[Pasted image 20251207203408.png]]
 ![[Pasted image 20251207203416.png]]
