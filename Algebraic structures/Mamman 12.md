@@ -169,11 +169,11 @@ $$G = H \cup \alpha H \iff G = eH \cup \alpha H \iff G = \{e, \alpha\}H $$
 לפי למה 8.20 נקבל כי $eH \neq \alpha H$
 לכן נקבל כי הגודל של כל אחת מהמחלקות האלה הוא 5. לפי למה 8.20 הן זרות. לכן האיחוד שלהן הוא $G$.
 משל חלק א סעיף ג.
+
 נכפול מצד שמאל ב- $\alpha$ את השוויון מהשאלה
 נקבל:
 $$\alpha \sigma \alpha = \sigma^{i}$$
 לכן, אראה כי $\alpha \sigma \alpha \in H$ .
- %% נסתכל  על התתי חבורה $[\sigma] = H$, $\{e, \alpha\} = K$ %%
 נניח בשלילה כי $\alpha \sigma \alpha \in \alpha H$ .
 לכן נקבל כי 
 $$\alpha \sigma \alpha = \alpha \sigma^i$$
@@ -182,6 +182,13 @@ $$\sigma \alpha = \sigma^i$$
 כלומר
 $$\alpha = \sigma^{i-1}$$
 בסתירה לכך ש$\alpha$ הוא מסדר 2.
+לכן, $\alpha \sigma \alpha \notin \alpha H$ , ונקבל שמתקיים
+$$\alpha \sigma \alpha \in H$$
+ולכן, עבור $i \in \{1, 2, 3, 4\}$ כלשהוא נקבל שמתקיים:
+$$\alpha \sigma \alpha = \sigma^i$$
+לכן
+$$\sigma \alpha = \alpha \sigma^i$$
+מש"ל ג חלק ב
 ## סעיף ד
 נניח כי $i \in \{1, 2, 3\}$ . אראה כי לכל $i$ מתקיים:
 $$\sigma \alpha \neq \alpha \sigma^{i}$$
