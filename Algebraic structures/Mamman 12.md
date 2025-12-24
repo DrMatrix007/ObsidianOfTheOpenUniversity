@@ -154,7 +154,7 @@ $$f^{-1}(g_1) f^{-1}(g_2) = f^{-1}(g_1 g_2)$$
 | --- | --- | --- | --- | --- |
 | e   | e   | a   | b   | ab  |
 | a   | a   | e   | ab  | b   |
-| b   | b   | ab  | e   | a   |
+| b   | b   | ab  | 1e  | a   |
 | ab  | ab  | b   | a   | e   |
 וקיבלנו חבורה.
 לפי משפט לגרנז', זו סתירה. לכן לכל זוג איברים, אחד חייב להיות לא מסדר 2.
@@ -169,3 +169,20 @@ $$G = H \cup \alpha H \iff G = eH \cup \alpha H \iff G = \{e, \alpha\}H $$
 לפי למה 8.20 נקבל כי $eH \neq \alpha H$
 לכן נקבל כי הגודל של כל אחת מהמחלקות האלה הוא 5. לפי למה 8.20 הן זרות. לכן האיחוד שלהן הוא $G$.
 משל חלק א סעיף ג.
+נכפול מצד שמאל ב- $\alpha$ את השוויון מהשאלה
+נקבל:
+$$\alpha \sigma \alpha = \sigma^{i}$$
+לכן, אראה כי $\alpha \sigma \alpha \in H$ .
+ %% נסתכל  על התתי חבורה $[\sigma] = H$, $\{e, \alpha\} = K$ %%
+נניח בשלילה כי $\alpha \sigma \alpha \in \alpha H$ .
+לכן נקבל כי 
+$$\alpha \sigma \alpha = \alpha \sigma^i$$
+כלומר,
+$$\sigma \alpha = \sigma^i$$
+כלומר
+$$\alpha = \sigma^{i-1}$$
+בסתירה לכך ש$\alpha$ הוא מסדר 2.
+## סעיף ד
+נניח כי $i \in \{1, 2, 3\}$ . אראה כי לכל $i$ מתקיים:
+$$\sigma \alpha \neq \alpha \sigma^{i}$$
+
