@@ -192,4 +192,15 @@ $$\sigma \alpha = \alpha \sigma^i$$
 ## סעיף ד
 נניח כי $i \in \{1, 2, 3\}$ . אראה כי לכל $i$ מתקיים:
 $$\sigma \alpha \neq \alpha \sigma^{i}$$
+נסתכל עבור $i=1$ :
+נקבל:
+$$\sigma \alpha = \alpha \sigma$$
+לכן, נקבל כי $\sigma \alpha$ הוא מסדר 10, בסתירה לנתונים.
 
+נסתכל עבור $i = 2$
+נקבל:
+$$\sigma \alpha= \alpha \sigma ^ 2$$
+נעלה בריבוע את שני צדי המשוואה:
+$$\sigma \alpha \alpha \sigma^2 = (\alpha \sigma ^2 )^2$$
+$$\sigma^3 = \alpha \sigma ^2 \alpha \sigma ^2$$
+$$\sigma = \alpha \sigma ^2 \alpha$$
