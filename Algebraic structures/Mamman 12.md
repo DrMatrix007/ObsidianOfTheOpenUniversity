@@ -99,12 +99,14 @@ $$h \in H \iff h=\alpha^{n_1}b^{n_2}, \space 0 \le n_1 \leq 19, \space 0 \le n_2
 הקבוצה $D_n$ היא קבוצה דיהדרלית. לכן מתקיים:
 $$D_n = [\sigma, \alpha]$$
 נגדיר:
-$$H = [\alpha], \space K = [\sigma]$$
+$$\beta = \varphi(\alpha), \space \gamma = \varphi(\sigma)$$
+מפני ש $\varphi$ היא הומומורפיזם על, נקבל כי לכל תמונה ב$G$ קיים מקור אחד לפחות.
+לכן, ניתן להסיק כי $G = [\beta, \gamma]$
 נסתכל על $\alpha$: ($e'$ הוא היחידה ב $G$)
-$$\alpha ^ 2 = e \implies \beta = \varphi(\alpha)^2 = e'$$
+$$\alpha ^ 2 = e \implies \beta^2 = e'$$
 
 נסתכל על $\sigma$:
-$$\sigma ^ n = e \implies \gamma = \varphi(\sigma)^n = e'$$
+$$\sigma ^ n = e \implies \gamma^n = e'$$
 לכן קיבלנו 2 איברים ב-$G$ (לא בהכרח שונים) כאשר הם מקיימים:
 $$\beta^2 = e, \space \gamma^n = e$$
 לפי למה 8.12, נקבל כי:
@@ -114,15 +116,19 @@ $$\beta^2 = e, \space \gamma^n = e$$
 לפי האיזומורפיזם, נקבל כי מתקבל 
 $$\alpha \sigma = \sigma^{-1} \alpha \implies \beta \gamma = \gamma^{-1} \beta$$
 נגדיר $m$ הסדר של $\gamma$ (ידוע כי מתקיים $m|n$ ).
-נבנה
 נבדיל בין 2 מקרים:
 מקרה 1: $\beta = e'$ 
+נקבל: 
+$$G = [\beta, \gamma] = [e', \gamma] = [\gamma]$$
+נסתכל על הקבוצה ב $D_n$ : (אזכיר כי $m$ מחלק את $n$ )
+$$D' = [\sigma^{\frac{n}{m}}] = \{ e, \sigma ^{\frac{n}{m}}, \dots, \sigma ^{\frac{(m-1)n}{m}} \}$$
+קיבלנו שתי חבורות ציקליות מאותו הסדר $G, D'$. לכן הו איזומורפיות אחת לשנייה.
+
+מקרה 2: $\beta \neq e'$
 נקבל:
-
-
-
-
-
+$$G = [\beta, \gamma]$$
+$$D' = [\alpha, \sigma^{\frac{n}{m}}]$$
+ניקח את
 
 # שאלה 5
 ![[Pasted image 20251207203434.png]]
