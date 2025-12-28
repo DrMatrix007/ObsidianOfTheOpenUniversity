@@ -128,8 +128,11 @@ $$D' = [\sigma^{\frac{n}{m}}] = \{ e, \sigma ^{\frac{n}{m}}, \dots, \sigma ^{\fr
 נקבל:
 $$G = [\beta, \gamma]$$
 $$D' = [\alpha, \sigma^{\frac{n}{m}}]$$
-ניקח את
-
+נקבל כי הקבוצה $D'$ היא חבורה דיהדרלית, על מצולע עם $m$ צלעות.
+אך מקיום האפימורפיזם, נקבל כי התנאים של חבורה דהדרלית תקף גם ל $G$.
+$$\beta \gamma = \varphi(\alpha) \varphi(\sigma) = \varphi(\alpha \sigma) = \varphi(\sigma^{-1} \alpha) = \varphi(\sigma^{-1}) \varphi(\alpha) = \gamma^{-1} \beta $$וכמובן: 
+$$\beta^2 = e, \space \gamma^m = e$$
+לכן שתי החבורות $G$ ו-$D'$ הן חבורות דיהדרליות ולכן איזומורפיות
 # שאלה 5
 ![[Pasted image 20251207203434.png]]
 תהי חבורה $G$ מסדר 10, כאשר אין בה איבר מסדר 10.
@@ -170,7 +173,7 @@ $$D' = [\alpha, \sigma^{\frac{n}{m}}]$$
 | --- | --- | --- | --- | --- |
 | e   | e   | a   | b   | ab  |
 | a   | a   | e   | ab  | b   |
-| b   | b   | ab  | 1e  | a   |
+| b   | b   | ab  | e   | a   |
 | ab  | ab  | b   | a   | e   |
 וקיבלנו חבורה.
 לפי משפט לגרנז', זו סתירה. לכן לכל זוג איברים, אחד חייב להיות לא מסדר 2.
@@ -211,13 +214,20 @@ $$\sigma \alpha \neq \alpha \sigma^{i}$$
 נסתכל עבור $i=1$ :
 נקבל:
 $$\sigma \alpha = \alpha \sigma$$
-לכן, נקבל כי $\sigma \alpha$ הוא מסדר 10, בסתירה לנתונים.
+לכן, נקבל כי $\sigma \alpha$ הוא מסדר 10, בסתירה לנתון.
 
 נסתכל עבור $i = 2$
 נקבל:
 $$\sigma \alpha = \alpha \sigma^{2}$$
-נקבל כי:
-$$(\sigma \alpha)^3 $$
+נסתכל על האיבר $\sigma \alpha$
+נקבל כי הסדר שלו הוא 2,5 או 10.
+
+$$(\sigma \alpha)^2 = \sigma \alpha \alpha \sigma^2 = \sigma^3 \neq e $$
+$$(\sigma \alpha)^5 = \sigma \alpha \alpha \sigma^2 \sigma \alpha \alpha \sigma^2 \sigma \alpha = \sigma^7 \alpha = \sigma \alpha \sigma^2 \neq e $$
+ואז נקבל כי גם:
+$$(\sigma \alpha)^{10} = \sigma \alpha \sigma^2 \sigma \alpha \sigma^2 = \sigma \alpha \sigma^3 \alpha \sigma^2 =\alpha \alpha \sigma^2 = \sigma^2 \neq e$$
+סתירה למסקנה (2) של משפט לגרנז'.
+
 נסתכל עבור $i = 3$
 נקבל:
 $$\sigma \alpha = \alpha \sigma^{3}$$
@@ -225,11 +235,8 @@ $$\sigma \alpha = \alpha \sigma^{3}$$
 $$(\sigma \alpha)^3 = \sigma \alpha \alpha \sigma^{3} \sigma \alpha = \alpha $$
 לכן
 $$(\sigma \alpha)^6 = e $$
-לכן האיבר מסדר (מקסימום) $6$ בסתירה למסקנה (2) של משפט לגרנז'.
-נניח בשלילה כי הסדר לא מחלק את $6$. לכן, נקבל כי הסדר הוא 5 או 4.
-	אם הסדר 5, אזי נקבל כי $\alpha \sigma$ הוא איבר היחידה, קיבלנו סתירה
-	אם הסדר 4, אזי נקבל כי $\alpha \sigma$ הוא מסדר 2 בעצם, בסתירה לכך שיש איבר מסדר 2 יחיד.
-לכן, הסדר של האיבר יכול להיות 2 או 3.
+לכן האיבר מסדר (מקסימום) 6 בסתירה למסקנה (2) של משפט לגרנז'.
+לפי למה 8.12 קיימות שתי אפשרויות לסדר של האיבר, אם הוא שונה מ6.
 	אם הסדר הוא 3, סתירה למסקנה (2) של משפט לגרנז'.
 	אם הסדר הוא 2, סתירה לכך שיש איבר יחיד מסדר 2.
 
