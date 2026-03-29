@@ -1,1 +1,4 @@
-[[Algebraic structures/Mamman 11|Mamman 11]]
+[[Mamman 1|Mamman 1]]
+[[Mamman 2]]
+[[Mamman 4]]
+[[Mamman 6]]
