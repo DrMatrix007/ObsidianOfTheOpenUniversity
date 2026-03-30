@@ -2,7 +2,7 @@
 ![[Pasted image 20260328172225.png]]
 יהי תת חוגים של $\mathbb{C}$ ,  $S$ ו- $R$ .
 נתון: 
-$$ i \in R,\ i \notin S$$
+$$i in R, i in.not S$$
 נניח בשלילה כי קיים איזומורפיזם של תת חוגים:
 $$\varphi : R \rightarrow S$$
 ידוע כי:
@@ -21,6 +21,11 @@ $$\varphi(i)=i$$
 מש"ל.
 # שאלה 2
 ![[Pasted image 20260328172232.png]]
+נתון:
+$$R = { a/b | a,b }$$
+
+
+
 ![[Pasted image 20260328172237.png]]
 ![[Pasted image 20260328172246.png]]
 ![[Pasted image 20260328172256.png]]
