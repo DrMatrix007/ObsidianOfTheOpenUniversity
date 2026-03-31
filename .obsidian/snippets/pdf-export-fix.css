@@ -1,0 +1,28 @@
+@media print {
+
+    body,
+    .markdown-preview-view,
+    .markdown-rendered {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    .typst-mate-block,
+    .typst-rendered,
+    svg {
+        filter: none !important;
+        -webkit-filter: none !important;
+    }
+
+    .typst-mate-block svg path,
+    .typst-mate-block svg use,
+    .typst-rendered svg path,
+    svg path {
+        fill: black !important;
+        stroke: none !important;
+    }
+
+    .typst-mate-block {
+        background: transparent !important;
+    }
+}
