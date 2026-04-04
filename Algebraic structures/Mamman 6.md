@@ -86,7 +86,7 @@ $$q, p in J$$
 איבר הופכי ל $a/b$ הוא $b/a$ .
 האיבר $b/a$ שייך ל $R$ אם"ם $a equiv 1 mod n$ .
 לכן, נקבל:
-$$J = {a/b| a,b in ZZ, b equiv 1 mod n, gcd(a,n) != 1}$$
+$$J = {a/b| a,b in ZZ, b equiv 1 mod n, space p|a}$$
 נקבל:
 $$a/b, c/d in J \ a/b-c/d=(a d - c b)/(b d) \ b d equiv 1 dot 1 equiv 1 mod n \ p | a, p | d => p | a d - c b$$
 בנוסף,
@@ -95,6 +95,15 @@ $$a/b in J, c/d in R \ a/b dot c/d = (a c)/(b d) \ b d equiv 1 dot 1 equiv 1 mod
 לכן, $J$ אידיאל.
 מש"ל כיוון 2.
 ### טענה נוספת
+אזכיר את הגדרת $J$ :
+$$J = {a/b| a,b in ZZ, b equiv 1 mod n, space p|a}$$
+לפי למה 15.23, קיים אפימורפיזם כאשר:
+$$phi: R -> R\/A$$
+נגדיר:
+$$phi(a/b)= a + J$$
+יהי $(a+c n)/b in R$ .
+#TODO
+
 
 # שאלה 3
 ![[Pasted image 20260328172237.png]]
