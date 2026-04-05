@@ -86,7 +86,7 @@ $$q, p in J$$
 איבר הופכי ל $a/b$ הוא $b/a$ .
 האיבר $b/a$ שייך ל $R$ אם"ם $a equiv 1 mod n$ .
 לכן, נקבל:
-$$J = {a/b| a,b in ZZ, b equiv 1 mod n, space p|a}$$
+$$J = {frac(a,b)| a,b in ZZ, b equiv 1 mod n, space p|a}$$
 נקבל:
 $$a/b, c/d in J \ a/b-c/d=(a d - c b)/(b d) \ b d equiv 1 dot 1 equiv 1 mod n \ p | a, p | d => p | a d - c b$$
 בנוסף,
@@ -97,18 +97,27 @@ $$a/b in J, c/d in R \ a/b dot c/d = (a c)/(b d) \ b d equiv 1 dot 1 equiv 1 mod
 ### טענה נוספת
 אזכיר את הגדרת $J$ :
 $$J = {a/b| a,b in ZZ, b equiv 1 mod n, space p|a}$$
-לפי למה 15.23, קיים אפימורפיזם כאשר:
-$$phi: R -> R\/A$$
-נגדיר:
-$$phi(a/b)= a + J$$
-יהי $(a+c n)/b in R$ .
-#TODO
+נגדיר אפימורפיזם של חוגים $phi$ :
+$$ phi : R -> ZZ_p \ phi: a/b |-> a dot b^(-1)$$
+קל לראות כי:
+$$phi(a/b dot c/d) = phi((a c)/(b d)) = a c (b d)^(-1) equiv a c b^(-1) d^(-1) equiv a b^(-1) c d^(-1) = phi(a/b) phi(c/d) space space (mod p)$$
+$$phi(a/b+c/d) = phi((a d + c b)/(b d)) = (a d + c b)(b d)^(-1) equiv \ equiv (a d)(b d)^(-1) + (c b)(b d)^(-1) equiv phi((a d)/(b d)) + phi((c b)/(b d)) equiv phi(a/b) + phi(c/d) space space (mod p)$$
 
 
 # שאלה 3
 ![[Pasted image 20260328172237.png]]
 
 
-
+# שאלה 4
 ![[Pasted image 20260328172246.png]]
+## סעיף א
+לפי המשפט, נקבל כי בחוג לא טריוואלי עם יחידה קיים אידיאל מירבי.
+נגדיר $J$ אידיאל ב $R$ .
+ידוע כי קיים $J'$ אידיאל מירבי ב $R$ .
+
+
+
+
+
+
 ![[Pasted image 20260328172256.png]]

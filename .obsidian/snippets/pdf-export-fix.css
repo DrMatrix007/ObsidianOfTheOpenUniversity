@@ -1,28 +1,14 @@
 @media print {
 
-    body,
-    .markdown-preview-view,
-    .markdown-rendered {
-        background-color: white !important;
-        color: black !important;
+    svg path,
+    svg rect,
+    svg use {
+        fill: black;
     }
 
-    .typst-mate-block,
-    .typst-rendered,
-    svg {
-        filter: none !important;
-        -webkit-filter: none !important;
-    }
-
-    .typst-mate-block svg path,
-    .typst-mate-block svg use,
-    .typst-rendered svg path,
-    svg path {
-        fill: black !important;
-        stroke: none !important;
-    }
-
-    .typst-mate-block {
-        background: transparent !important;
+    svg path[fill="none"],
+    svg line {
+        stroke: black;
+        stroke-width: 0.05em;
     }
 }
