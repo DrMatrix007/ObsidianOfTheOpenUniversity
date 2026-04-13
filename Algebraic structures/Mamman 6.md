@@ -121,3 +121,15 @@ $$phi(a/b+c/d) = phi((a d + c b)/(b d)) = (a d + c b)(b d)^(-1) equiv \ equiv (a
 
 
 ![[Pasted image 20260328172256.png]]
+נניח בשלילה כי קיים $x in R$ כאשר:
+$$x in.not M and 1-x in.not M$$
+נגדיר את האפימורפיזם:
+$$phi: R -> R\/M \ phi: r |-> r+M$$
+יהי $x in R$ .
+ידוע כי מתקיים $x^2 = x$ .
+לכן נקבל:
+$$phi(x^2) = phi(x) <==> x^2+M = x+M \
+x^2-x+M= 0 + M \
+x(x-1) + M = 0 + M
+$$
+#TODO מחלקי אפס!!!
