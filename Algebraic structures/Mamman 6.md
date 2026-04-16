@@ -98,22 +98,46 @@ $$a/b in J, c/d in R \ a/b dot c/d = (a c)/(b d) \ b d equiv 1 dot 1 equiv 1 mod
 אזכיר את הגדרת $J$ :
 $$J = {a/b| a,b in ZZ, b equiv 1 mod n, space p|a}$$
 נגדיר אפימורפיזם של חוגים $phi$ :
-$$ phi : R -> ZZ_p \ phi: a/b |-> a dot b^(-1)$$
+$$ phi : R -> ZZ_p \ phi: a/b |-> a$$
 קל לראות כי:
-$$phi(a/b dot c/d) = phi((a c)/(b d)) = a c (b d)^(-1) equiv a c b^(-1) d^(-1) equiv a b^(-1) c d^(-1) = phi(a/b) phi(c/d) space space (mod p)$$
-$$phi(a/b+c/d) = phi((a d + c b)/(b d)) = (a d + c b)(b d)^(-1) equiv \ equiv (a d)(b d)^(-1) + (c b)(b d)^(-1) equiv phi((a d)/(b d)) + phi((c b)/(b d)) equiv phi(a/b) + phi(c/d) space space (mod p)$$
-
-
+$$phi(a/b dot c/d) = phi((a c)/(b d)) = a c equiv phi(a/b) phi(c/d) space space (mod p)$$
+$$phi(a/b+c/d) = phi((a d + c b)/(b d)) = (a d + c b) equiv \ equiv (a d) + (c b) equiv phi((a d)/(b d)) + phi((c b)/(b d)) equiv phi(a/b) + phi(c/d) space space (mod p)$$
+לכן $phi$ הומומורפיזם. קל לראות כי $phi$ גם אפימורפיזם (לכל $a in ZZ_p$ מתקיים $phi(a/1) = a$ ).
+נמצא את $"Ker"(phi)$ :
+$$phi(a/b) = 0 <=> a equiv 0 space space (mod p) <=> p | a <=> a/b in J$$
+ולכן:
+$$J = "Ker"(phi)$$
+לפי משפט ההומומורפיזם של חוגים, נקבל כי מתקיים:
+$$R\/J tilde.equiv ZZ_p$$
+מש"ל ג
 # שאלה 3
-![[Pasted image 20260328172237.png]]
-
+![[Pasted image 20260328172237.png|697]]
+נגדיר:
+$$phi: ZZ[i] -> ZZ, space phi: a + b i |-> 4a + b$$
+קל לראות כי $phi$ אפימורפיזם:
+יהי $a in ZZ$
+$$ a i in ZZ[i],space phi(a i) = a$$
+ניקח $(4+i)(a+b i) in (4+i)$ .
+$$(4+i)(a+b i) = 4 a - b + 4 b i + a i = 4a-b+i(4b+a) \ phi((4+i)(a+b i)) = phi(4a-b+i(4b+a))=16a-4b+4b+a=17a$$
+לכן, נקבל כי 
+$$phi((4+i))= {17a | a in ZZ}$$
+ידוע כי:
+$$ZZ\/{17a | a in ZZ} = ZZ_17$$
+לפי משפט ההתאמה, נקבל כי:
+$$ZZ[i]\/(4+i) tilde.equiv ZZ_17 $$
+מש"ל
 
 # שאלה 4
 ![[Pasted image 20260328172246.png]]
 ## סעיף א
 לפי המשפט, נקבל כי בחוג לא טריוואלי עם יחידה קיים אידיאל מירבי.
 נגדיר $J$ אידיאל ב $R$ .
-ידוע כי קיים $J'$ אידיאל מירבי ב $R$ .
+נבדיל בין 2 אפשרויות:
+### אפשרות 1 - $J$ אידאל מרבי.
+אידאל זה מוכל בעצמו ולכן הטענה נכונה
+### אפשרות 2 - $J$ לא אידאל מרבי
+
+
 
 
 
