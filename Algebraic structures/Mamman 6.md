@@ -202,7 +202,20 @@ $$phi: R -> cal(P)(U) \
 phi: x |-> { M in U | x in.not M }
 $$
 אראה כי $phi$ מונומורפיזם.
-$phi(x y) = { M in U | x y in.not M } = $
-
-
-
+$$phi(x y) = { M in U | x y in.not M } = {M in U | x in.not M, y in.not M} = \
+{M in U | x in.not M} sect {M in U | y in.not M } = phi(x) sect phi(y) = phi(x)phi(y)
+$$
+ידוע כי לכל $x in R$ מתקיים $x in M$ או $1-x in M$ עבור אידיאל מירבי כלשהו.
+אם מתקיים $x,y in.not M$ , נקבל כי $1 - x, 1 - y in M$ ולכן,
+$$1 + x - (1-y) = -x+y in M$$
+נזכר שלפי שאלה 14.4, מתקיים $2x = 0 <==> x = -x$ .
+וקיבלנו $x+y in M$ .
+אחרת, אם מתקיים $x in M$ ו- $y in.not M$ (בלי הגבלת הכלל)
+$$x + y + M = y+M != M$$
+ולכן $x+y in.not M$
+ולכן,
+$$phi(x+y) = {M in U | x+y in.not M} = {M in U | x in.not M} triangle {M in U | y in.not M} = phi(x)+phi(y)$$
+אראה כי $phi$ חח"ע.
+אשתמש בלמה 15.7.
+נסתכל על $"Ker"(phi)$ .
+האיבר הינטרלי לחיבור ב $cal(P)(U)$ הוא הקבוצה הריקה.
