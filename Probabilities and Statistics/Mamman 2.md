@@ -76,10 +76,34 @@ P(C) - (P(B | A) P(C | A) P(A) + P(A^C inter B inter C)) = \
 P(C) - (P(B) P(C inter A) + P(A^C inter B inter C)) = \
 0.5 - (0.5 dot 0.4  + 0.05) = 0.25
 $$
+קיבלנו
+$$
+P(A inter B inter C) = 0.2 \
+P(B^C inter C) = P(B inter C) = 0.25
+$$
 מש"ל א
 ## סעיף ב
 נחשב את:
 $$
 P(B union C | A) = P(B|A) + P(C|A) - P(B inter C | A) = \
-P(B inter C | A) = P(B) + 
+P(B inter C | A) = P(B) + P(A inter C)/P(A) - P(B inter C | A) = \
+0.5 + 0.4/0.8 - 0.25 = 0.75 = P(B union C | A)
 $$
+מש"ל ב 
+## סעיף ג
+לפי ההגדרה בספר, כדי ש$A$, $B$ ו-$C$ יהיה בלתי תלויים, צריך להתקיים:
+$$
+P(A inter B inter C) = P(A) P(B) P(C) \ 
+P(A inter B) = P(A) P(B) \
+P(A inter C) = P(A) P(C) \
+P(C inter B) = P(C) P(B) \
+$$
+מהנתונים, קל לראות כי:
+$$
+P(A inter B inter C) = 0.2 = 0.8 dot 0.5 dot 0.5 = P(A) P(B) P(C) \
+P(C inter B) = 0.25 = 0.5 dot 0.5 = P(C) P(B) \
+P(A inter C) = 0.4 = 0.8 dot 0.5 = P(A) P(C) \
+P(A inter B) = P(B|A)P(A) = P(B)P(A)
+$$
+ולכן הם בלתי תלויים.
+מש"ל ג.
