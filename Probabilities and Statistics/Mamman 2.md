@@ -61,10 +61,25 @@ P(E) = 0.5 dot 0.1 + 0.3 dot 0.4 + 0.2 dot 0.7 = 0.31
 $$
 מש"ל ב
 ## סעיף ג
-נרצה למצוא את:
-$1 - P(C|E) = 1 - ()$
-
-
-
+נרצה למצוא את (בעזרת נוסחת בייס):
+$$1 - P(C|E) = 1 - (P(E|C)P(C))/(P(E))=1-(0.2 dot 0.7)/0.31 = 17/31 approx 0.548$$
+מש"ל ג
 # שאלה 4
 ![[Pasted image 20260404165645.png]]
+## סעיף א
+נחשב (בעזרת הנתונים, נוסחאת הכפל, והסתברות מותנית):
+$$
+P(B^C inter C) = P(C) - P(B inter C) = \
+P(C) - (P(A inter B inter C) + P(A^C inter B inter C)) = \
+P(C) - (P(B inter C | A) P(A) + P(A^C inter B inter C)) = \
+P(C) - (P(B | A) P(C | A) P(A) + P(A^C inter B inter C)) = \
+P(C) - (P(B) P(C inter A) + P(A^C inter B inter C)) = \
+0.5 - (0.5 dot 0.4  + 0.05) = 0.25
+$$
+מש"ל א
+## סעיף ב
+נחשב את:
+$$
+P(B union C | A) = P(B|A) + P(C|A) - P(B inter C | A) = \
+P(B inter C | A) = P(B) + 
+$$
