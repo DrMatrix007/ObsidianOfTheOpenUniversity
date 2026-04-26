@@ -1,8 +1,8 @@
 ![[Pasted image 20260404165553.png]]
 ## סעיף א
-
+הדיאגרמה:
 ![[Mamman 2 Question 1 Seif 1]]
-
+חישובים:
 
 ![[Pasted image 20260404165634.png]]
 ## סעיף א
